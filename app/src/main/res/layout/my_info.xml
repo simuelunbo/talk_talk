@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/modify_my_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:id="@+id/linearlayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_name2"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이름" />
+
+            <TextView
+                android:id="@+id/modify_my_name"
+                android:textSize="24dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="김아무개" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_msg"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:background="@color/white"
+                android:textSize="32dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="상태 메세지" />
+
+            <TextView
+                android:id="@+id/modify_my_msg"
+                android:textSize="24dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

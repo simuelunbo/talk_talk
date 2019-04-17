@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chat_find_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="true"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ChatFindProfile_img"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                card_view:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/ChatFindUser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ChatFIndEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/ChatFindcheckBox"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

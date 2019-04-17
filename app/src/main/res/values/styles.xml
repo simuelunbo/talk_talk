@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CallActivityTheme" parent="android:Theme.Material">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ConfigTheme" parent="android:Theme.Holo.Light">
+
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="DataTableTheme" parent="android:Theme.Holo.Light">
+    </style>
+
+    <style name="DataHeaderTheme" parent="android:Theme.Holo.Light">
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="DataTableHeaderAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DataTableSubHeaderAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="DataTableLabelAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="DataTableValueAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#fff</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="myDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

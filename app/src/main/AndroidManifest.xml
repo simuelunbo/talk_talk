@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sjb.talk_talk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera2"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/talktalk"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/talktalk"
+        android:supportsRtl="true"
+        android:largeHeap = "true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".Service.Chat_service"
+            android:enabled="true"
+            android:exported="true"></service>
+        <provider
+            android:authorities="com.example.sjb.talk_talk"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"/>
+        </provider>
+        <activity
+            android:name=".activity.Login"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.Register"></activity>
+        <activity android:name=".activity.Talktalk_main"></activity>
+        <activity android:name=".activity.My_info"></activity>
+        <activity android:name=".activity.Msg_change"></activity>
+        <activity android:name=".activity.InviteFriendsInChatRoom"></activity>
+        <activity android:name=".activity.Find_friend"></activity>
+        <activity android:name=".activity.Block_friend"></activity>
+        <activity android:name=".activity.Chat_find_friend"></activity>
+        <activity android:name=".activity.Chatroom"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="fullSensor"
+            android:label="@string/camera_example_title">
+        </activity>
+        <activity android:name=".activity.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="fullSensor"
+            android:label="@string/stream_player_title"/>
+    </application>
+
+</manifest>
