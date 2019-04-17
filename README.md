@@ -45,4 +45,4 @@ TCP/IP를 이용한 안드로이드용 메신저 어플
 
 * 구글로그인
 
-<iframe src='//gifs.com/embed/yow1K7' frameborder='0' scrolling='no' width='408px' height='776px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
+<a href="https://gifs.com/gif/yow1K7"><img src="https://gifs.com/gif/yow1K7.gif"/></a>
