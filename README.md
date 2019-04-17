@@ -40,3 +40,9 @@ TCP/IP를 이용한 안드로이드용 메신저 어플
 * google-webrtc
 * Volley
 * Wowza GoCoder
+
+## 핵심기능
+
+* 구글로그인
+
+<iframe src='//gifs.com/embed/yow1K7' frameborder='0' scrolling='no' width='408px' height='776px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
