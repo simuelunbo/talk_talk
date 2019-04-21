@@ -60,8 +60,17 @@ TCP/IP를 이용한 안드로이드용 메신저 어플
 <img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468464-c7eb3380-6467-11e9-8717-b5e7fef56dbe.gif"></img>
 <img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468466-ca4d8d80-6467-11e9-9afd-9ba21cf24059.gif"></img>
 ------------------------------
-##### 영상 통화 및 방송하기
+##### 영상 통화 및 스트리밍 방송
 
 
 <img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468502-65466780-6468-11e9-9745-bf32e1c04461.gif"></img>
 <img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468549-2fee4980-6469-11e9-8caf-35a6f55671e4.gif"></img>
+
+## 관련 오픈소스
+
+##### 영상통화 
+* https://github.com/webrtc/apprtc
+* https://github.com/webrtc/samples
+
+##### 스트리밍 방송
+* https://www.wowza.com/pricing/installer#gocodersdk-downloads
