@@ -66,7 +66,7 @@ TCP/IP를 이용한 안드로이드용 메신저 어플
 <img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468502-65466780-6468-11e9-9745-bf32e1c04461.gif"></img>
 <img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468549-2fee4980-6469-11e9-8caf-35a6f55671e4.gif"></img>
 
-## 관련 오픈소스
+## 관련 소스
 
 ##### 영상통화 
 * https://github.com/webrtc/apprtc
