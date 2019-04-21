@@ -53,3 +53,9 @@ TCP/IP를 이용한 안드로이드용 메신저 어플
 
 <img width="200" height="400" src="https://user-images.githubusercontent.com/46774431/56468407-f4528000-6466-11e9-84da-39de70012259.gif"></img>
 <img width="200" height="400" src="https://user-images.githubusercontent.com/46774431/56468440-7478e580-6467-11e9-87fe-6a30394ebc53.gif"></img>
+-----------------------------
+메세지 보내기
+
+
+<img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468464-c7eb3380-6467-11e9-8717-b5e7fef56dbe.gif"></img>
+<img width="400" height="400" src="https://user-images.githubusercontent.com/46774431/56468466-ca4d8d80-6467-11e9-9afd-9ba21cf24059.gif"></img>
