@@ -74,3 +74,7 @@ TCP/IP를 이용한 안드로이드용 메신저 어플
 
 ##### 스트리밍 방송
 * https://www.wowza.com/pricing/installer#gocodersdk-downloads
+
+## 참고 사항
+* 서버관련 소스는 배제하고 커밋하였습니다
+* 개발은 혼자 진행 하였으며 개발 기간은 약 8~9주 걸렸습니다
