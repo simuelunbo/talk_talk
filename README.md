@@ -4,13 +4,13 @@
 TCP/IP를 이용한 안드로이드용 메신저 어플
 
 ## 목차
-* 사용기술
+* [사용기술](https://github.com/simuelunbo/talk_talk/blob/master/README.md#사용기술)
 
-* 핵심기능
+* [핵심기능](https://github.com/simuelunbo/talk_talk/blob/master/README.md#핵심기능)
 
-* 관련 오픈소스
+* [관련 오픈소스](https://github.com/simuelunbo/talk_talk/blob/master/README.md#관련오픈소스)
 
-* 참고사항
+* [참고사항](https://github.com/simuelunbo/talk_talk/blob/master/README.md#참고사항])
 
 ## 사용기술
 
