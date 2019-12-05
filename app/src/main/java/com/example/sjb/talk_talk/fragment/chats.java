@@ -261,7 +261,7 @@ public class chats extends Fragment {
             public void onResponse(String response) {
                 try {
                     chat.clear();
-                    //서버로부터 받는 데이터는 JSON타입의 객체이다.
+                    //서버로부터 받는 데이터는 JSON타입의 객체이다 .
                     JSONArray jsonResponse = new JSONArray(response);
                     for(int i = 0; i < jsonResponse.length(); i++){
                         Item_chats item_chats = new Item_chats("","","","","",false);
