@@ -52,7 +52,7 @@ import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
+//채팅 목록
 public class chats extends Fragment {
 
     RecyclerView recyclerView;
@@ -183,140 +183,6 @@ public class chats extends Fragment {
     private Runnable showUpdate = new Runnable() { // 서버에서 메세지를 받는 메소드
 
         public void run() {
-//            String receive = "" + data;
-//            final String array[];
-//            array = receive.split("!@#&");
-//
-//            mFormat = new SimpleDateFormat("a hh:mm");
-//            mNow = System.currentTimeMillis();
-//            mDate = new Date(mNow);
-//            Log.i("3번값은 없는가?", ""+array[5]);
-//            if(array[5].equals("1")==true){
-//                 // 초대 받았을때 초대 받은 채팅방 리스트 생성
-//                    Response.Listener<String> responseListener = new Response.Listener<String>() {
-//                        @Override
-//                        public void onResponse(String response) {
-//                            try {
-//                                //서버로부터 받는 데이터는 JSON타입의 객체이다.
-//                                chat.clear();
-//                                JSONArray jsonResponse = new JSONArray(response);
-//                                for(int i = 0; i < jsonResponse.length(); i++){
-//                                    Item_chats item_chats = new Item_chats("","","","","",false);
-//                                    item_chats.room_num = jsonResponse.getJSONObject(i).getString("room_no");
-//                                    item_chats.profile_img = jsonResponse.getJSONObject(i).getString("profile_img");
-//                                    item_chats.name = jsonResponse.getJSONObject(i).getString("friend_name");
-//                                    item_chats.msg =  jsonResponse.getJSONObject(i).getString("last_msg");
-//                                    item_chats.time = jsonResponse.getJSONObject(i).getString("time");
-//                                    chat.add(item_chats);
-//                                }
-//
-//                                for (int i = 0; i < chat.size(); i++) {
-//                                    for (int j = 0; j < chat.size(); j++) {
-//                                        if (i == j) {
-//                                        } else if (chat.get(j).room_num.equals(chat.get(i).room_num)) {
-//                                            chat.set(i, new Item_chats(chat.get(i).room_num, "root", chat.get(i).name + "  " + chat.get(j).name, chat.get(i).msg, chat.get(i).time, true));
-//                                            //중복값 제거 오류 수정
-//                                            chat.remove(j);
-//                                        }
-//                                    }
-//                                }
-//                                mAdapter = new Adapter_chats(chat);
-//                                recyclerView.setAdapter(mAdapter);
-//                                mAdapter.notifyDataSetChanged();
-//
-//                            } catch (JSONException e) {
-//                                Log.i("error", ""+e);
-//                            }
-//                        }
-//                    };//responseListener 끝
-//                    //volley 사용법
-//                    //1. RequestObject를 생성한다. 이때 서버로부터 데이터를 받을 responseListener를 반드시 넘겨준다.
-//                    ChatsRequest chatsRequest = new ChatsRequest(userEmail, userName, google, responseListener);
-//                    //2. RequestQueue를 생성한다.
-//                    RequestQueue queue = Volley.newRequestQueue(mcontext);
-//                    //3. RequestQueue에 RequestObject를 넘겨준다.
-//                    queue.add(chatsRequest);
-//
-//                    //원래는 방 iD값 비교 해서 dbhelp에 값을 넣어야 하는데 급해서 그렇게 안했음...
-//                    if(array[3].equals("나감")==true){
-//                        dbHelper.chatID_update(array[0],array[4]);// chatID값 변경
-//                        dbHelper.insert(array[4],array[1],array[2],"",array[2]+"님이 나갔습니다",2, mFormat.format(mDate),0,0);
-//                    }
-//                    else if(array[3].equals("초대")==true){
-//                        dbHelper.chatID_update(array[0],array[4]);// chatID값 변경
-//                        dbHelper.insert(array[4],array[1],array[2],"",array[2]+"님을 초대 하였습니다",2, mFormat.format(mDate),0,0);
-//                    }
-//            }
-//            else if(array[5].equals("0")==true){ // 채팅방
-//                Response.Listener<String> responseListener = new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        try {
-//                            //서버로부터 받는 데이터는 JSON타입의 객체이다.
-//                            chat.clear();
-//                            nFormat = new SimpleDateFormat("MM/dd a hh:mm");
-//                            nNow = System.currentTimeMillis();
-//                            nDate = new Date(nNow);
-//                            JSONArray jsonResponse = new JSONArray(response);
-//                            for(int i = 0; i < jsonResponse.length(); i++){
-//                                Item_chats item_chats = new Item_chats("","","","","",false);
-//                                item_chats.room_num = jsonResponse.getJSONObject(i).getString("room_no");
-//                                item_chats.profile_img = jsonResponse.getJSONObject(i).getString("profile_img");
-//                                item_chats.name = jsonResponse.getJSONObject(i).getString("friend_name");
-//                                item_chats.msg =  jsonResponse.getJSONObject(i).getString("last_msg");
-//                                item_chats.time = jsonResponse.getJSONObject(i).getString("time");
-//                                NumberOfPeople = jsonResponse.getJSONObject(i).getInt("NumberOfPeople");
-//                                chat.add(item_chats);
-//                            }
-//
-//                            for (int i = 0; i < chat.size(); i++) {
-//                                for (int j = 0; j < chat.size(); j++) {
-//                                    if (i == j) {
-//                                    } else if (chat.get(j).room_num.equals(chat.get(i).room_num)) {
-//                                        chat.set(i, new Item_chats(chat.get(i).room_num, "root", chat.get(i).name + "  " + chat.get(j).name, chat.get(i).msg, chat.get(i).time, true));
-//                                        //중복값 제거 오류 수정
-//                                        chat.remove(j);
-//                                    }
-//                                }
-//                            }
-//                            mAdapter = new Adapter_chats(chat);
-//                            recyclerView.setAdapter(mAdapter);
-//                            mAdapter.notifyDataSetChanged();
-//                            try {
-//                                for (int i = 0; i < ic.size(); i++) {
-//                                    if (array[0].equals(chat.get(i).room_num)) { // 아이템 리스트 chatID값과 보낸 메세지 chatID값이 같을경우 insert
-//                                        ic.add(new Item_Chatroom(array[0], array[1], array[2], array[3], array[4], 1, mFormat.format(mDate), NumberOfPeople - 1, false));
-//                                        dbHelper.insert(array[0], array[1], array[2], array[3], array[4], 1, mFormat.format(mDate), NumberOfPeople - 1, 1);
-//                                    }
-//                                }
-//                            }
-//                            catch (Exception e){
-//                                Log.i("errror", ""+e);
-//                            }
-//                        } catch (JSONException e) {
-//                            Log.i("error", ""+e);
-//                        }
-//                    }
-//                };
-//                ChatsRequest chatsRequest = new ChatsRequest(userEmail, userName, google, responseListener);
-//                RequestQueue queue = Volley.newRequestQueue(mcontext);
-//                queue.add(chatsRequest);
-//
-//            }
-//            else if(array[5].equals("3")==true){
-//                Log.i("array[5]값", "여긴통과됨???"+array[5]);
-//                if(array[1].equals(userEmail)==false){// 메세지값이 내가 보낸것이 아닐때
-//                    for(int i = 0; i<ic.size(); i++){
-//                        if(ic.get(i).Read > 0) {
-//                            Log.i("chats프래그먼트", ""+ic.get(i).Read);
-//                            ic.set(i,new Item_Chatroom(array[0], ic.get(i).friendEmail, ic.get(i).friend, ic.get(i).friendimg, ic.get(i).chat, ic.get(i).who, ic.get(i).time, ic.get(i).Read - 1, ic.get(i).Readcheck));
-//                            Log.i("chats프래그먼트22222", ""+ic.get(i).Read);
-//                            dbHelper.readupdate(array[0], ic.get(i).Read-1);
-//                        }
-//                    }
-//                }
-//            }
-
             Response.Listener<String> responseListener = new Response.Listener<String>() {
 
                 //서버로부터 여기서 데이터를 받음

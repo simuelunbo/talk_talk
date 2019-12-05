@@ -66,6 +66,7 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
     private boolean micEnabled = true;
     private boolean isSwappedFeeds;
     // Control buttons for limited UI
+    // 외부 컨트롤 버튼
     private ImageButton disconnectButton;
     private ImageButton cameraSwitchButton;
     private ImageButton toggleMuteButton;

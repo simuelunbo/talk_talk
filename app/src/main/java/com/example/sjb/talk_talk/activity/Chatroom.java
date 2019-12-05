@@ -108,16 +108,14 @@ public class Chatroom extends AppCompatActivity {
     SimpleDateFormat nFormat;
     long nNow;
     Date nDate;
-//    StringBuffer sb;
     ArrayList<Item_Chatroom> chat = new ArrayList<>();
-
 
     Uri imageUri;
     Uri photoURI, albumURI;
     Bitmap bitmap;
     DBHelper dbHelper;
-//    Context context;
 
+    //채팅방
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
